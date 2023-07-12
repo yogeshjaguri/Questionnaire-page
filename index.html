@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questionnaire Form</title>
+  <style>
+    /* CSS styles for form layout */
+    form {
+      width: 500px;
+      margin: 0 auto;
+    }
+  
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 20px;
+ 
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    div {
+        border-color: #45a049;
+        border-style: double;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 10px;
+      color: orange;
+    }
+
+    body {
+        background-color: black;
+    }
+  </style>
+</head>
+<body>
+    <div>
+  <h1>Questionnaire</h1>
+  <form action="submit_form.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required>
+    
+    <label for="work">Occupation:</label>
+    <input type="text" id="work" name="work" required>
+    
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+    
+    <label for="taste">Taste and Preference:</label>
+    <textarea id="taste" name="taste" rows="4" required></textarea>
+    
+    <label for="pain_areas">Pain Areas:</label>
+    <textarea id="pain_areas" name="pain_areas" rows="4" required></textarea>
+    <br/>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+</body>
+</html>
